@@ -25,10 +25,10 @@ struct PhoneView: View {
                 
                 Rectangle()
                     .fill(.white)
-                    .frame(width: width * 0.9, height: height * 0.3)
+                    .frame(width: width * 0.85, height: height * 0.24)
                     .clipShape(RoundedRectangle(cornerRadius: height * 0.04))
                     .overlay(RoundedRectangle(cornerRadius: height * 0.04).stroke(.gray, lineWidth: 3))
-                    .offset(x: size / 20, y: size / 2.8)
+                    .offset(x: size / 15, y: size / 2.4)
                 
                 Rectangle()
                     .frame(width: width * 0.34, height: height * 0.055)
@@ -61,6 +61,12 @@ struct PhoneView: View {
                 Text(isPresented ? "Card Added" :  "Add Card")
                     .font(.system(size: size * 0.1))
                     .offset(x: isPresented ? size / 4 : size / 3.5, y: size / 0.95)
+                
+                Image(systemName: "plus.circle")
+                    .resizable()
+                    .foregroundStyle(.blue)
+                    .frame(width: width * 0.1, height: height * 0.05)
+                    .offset(x: size / 2.25, y: size / 1.63)
             }
         }
     }
