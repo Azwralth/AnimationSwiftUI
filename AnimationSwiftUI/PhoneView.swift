@@ -18,7 +18,14 @@ struct PhoneView: View {
                 let size = min(width, height)
                 
                 Rectangle()
-                    .fill(.white)
+                    .fill(
+                        RadialGradient(
+                            colors: [.darkGreen, .teal],
+                            center: .center,
+                            startRadius: size * 3,
+                            endRadius: size * 0.1
+                        )
+                    )
                     .frame(width: width, height: height)
                     .clipShape(RoundedRectangle(cornerRadius: height * 0.09))
                     .overlay(RoundedRectangle(cornerRadius: height * 0.09).stroke(Color.black, lineWidth: 6))
@@ -54,12 +61,14 @@ struct PhoneView: View {
                 if isPresented {
                     Image(systemName: "checkmark.circle")
                         .resizable()
+                        .foregroundStyle(.white)
                         .frame(width: width * 0.2, height: height * 0.1)
                         .offset(x: size / 2.5, y: size / 0.8)
                         .disabled(isPresented)
                 }
                 Text(isPresented ? "Card Added" :  "Add Card")
                     .font(.system(size: size * 0.1))
+                    .foregroundStyle(.white)
                     .offset(x: isPresented ? size / 4 : size / 3.5, y: size / 0.95)
                 
                 Image(systemName: "plus.circle")
