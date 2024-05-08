@@ -28,6 +28,7 @@ struct ContentView: View {
                     .frame(width: 300, height: 180)
                     .animation(.linear, value: rectangleView)
                     .offset(x: rectangleView ? 0 : UIScreen.main.bounds.height, y: -120)
+//                    .offset(x: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
                     .transition(.move(edge: .trailing))
             }
         }

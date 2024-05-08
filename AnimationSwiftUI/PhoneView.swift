@@ -24,6 +24,13 @@ struct PhoneView: View {
                     .overlay(RoundedRectangle(cornerRadius: height * 0.09).stroke(Color.black, lineWidth: 6))
                 
                 Rectangle()
+                    .fill(.white)
+                    .frame(width: width * 0.9, height: height * 0.3)
+                    .clipShape(RoundedRectangle(cornerRadius: height * 0.04))
+                    .overlay(RoundedRectangle(cornerRadius: height * 0.04).stroke(.gray, lineWidth: 3))
+                    .offset(x: size / 20, y: size / 2.8)
+                
+                Rectangle()
                     .frame(width: width * 0.34, height: height * 0.055)
                     .clipShape(RoundedRectangle(cornerRadius: height * 0.09))
                     .offset(x: size * 0.33, y: size * 0.08)
@@ -54,8 +61,6 @@ struct PhoneView: View {
                 Text(isPresented ? "Card Added" :  "Add Card")
                     .font(.system(size: size * 0.1))
                     .offset(x: isPresented ? size / 4 : size / 3.5, y: size / 0.95)
-                
-                
             }
         }
     }
