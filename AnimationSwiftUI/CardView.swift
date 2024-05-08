@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RectangleView: View {
+struct CardView: View {
     
     var body: some View {
         GeometryReader { geometry in
@@ -22,7 +22,7 @@ struct RectangleView: View {
                     )
                     .frame(width: width, height: height)
                     .clipShape(RoundedRectangle(cornerRadius: height * 0.12))
-                    .shadow(radius: 10)
+                    .shadow(color: .gray, radius: 5, x: -2, y: 2)
                 
                 Text("Credit")
                     .bold()
@@ -38,20 +38,24 @@ struct RectangleView: View {
                     .offset(x: -size / 2 , y: size / 3.3)
                 
                 Circle()
-                    .fill(.yellow)
-                    .frame(width: size * 0.2, height: size * 0.2)
+                    .fill(.yellow.opacity(0.9))
+                    .frame(width: size * 0.22, height: size * 0.22)
                     .offset(x: size * 0.6, y: size * 0.28)
                 
                 Circle()
-                    .fill(.red)
-                    .frame(width: size * 0.2, height: size * 0.2)
+                    .fill(.red.opacity(0.9))
+                    .frame(width: size * 0.22, height: size * 0.22)
                     .offset(x: size * 0.5, y: size * 0.28)
+                
+                Text("mastercard")
+                    .font(.custom("", size: size * 0.08))
+                    .offset(x: size * 0.55, y: size * 0.43)
             }
         }
     }
 }
 
 #Preview {
-    RectangleView()
+    CardView()
         .frame(width: 300, height: 180)
 }

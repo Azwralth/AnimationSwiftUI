@@ -11,8 +11,8 @@
 		76C04A662BEB7BE100FA32B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A652BEB7BE100FA32B4 /* ContentView.swift */; };
 		76C04A682BEB7BE300FA32B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C04A672BEB7BE300FA32B4 /* Assets.xcassets */; };
 		76C04A6B2BEB7BE300FA32B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C04A6A2BEB7BE300FA32B4 /* Preview Assets.xcassets */; };
-		76C04A722BEB7E3000FA32B4 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A712BEB7E3000FA32B4 /* RectangleView.swift */; };
-		76C04A762BEB8BEB00FA32B4 /* IphoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A752BEB8BEB00FA32B4 /* IphoneView.swift */; };
+		76C04A722BEB7E3000FA32B4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A712BEB7E3000FA32B4 /* CardView.swift */; };
+		76C04A762BEB8BEB00FA32B4 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A752BEB8BEB00FA32B4 /* PhoneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +21,8 @@
 		76C04A652BEB7BE100FA32B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76C04A672BEB7BE300FA32B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76C04A6A2BEB7BE300FA32B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		76C04A712BEB7E3000FA32B4 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
-		76C04A752BEB8BEB00FA32B4 /* IphoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneView.swift; sourceTree = "<group>"; };
+		76C04A712BEB7E3000FA32B4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		76C04A752BEB8BEB00FA32B4 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			children = (
 				76C04A632BEB7BE100FA32B4 /* AnimationSwiftUIApp.swift */,
 				76C04A652BEB7BE100FA32B4 /* ContentView.swift */,
-				76C04A712BEB7E3000FA32B4 /* RectangleView.swift */,
-				76C04A752BEB8BEB00FA32B4 /* IphoneView.swift */,
+				76C04A712BEB7E3000FA32B4 /* CardView.swift */,
+				76C04A752BEB8BEB00FA32B4 /* PhoneView.swift */,
 				76C04A672BEB7BE300FA32B4 /* Assets.xcassets */,
 				76C04A692BEB7BE300FA32B4 /* Preview Content */,
 			);
@@ -144,9 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C04A662BEB7BE100FA32B4 /* ContentView.swift in Sources */,
-				76C04A762BEB8BEB00FA32B4 /* IphoneView.swift in Sources */,
+				76C04A762BEB8BEB00FA32B4 /* PhoneView.swift in Sources */,
 				76C04A642BEB7BE100FA32B4 /* AnimationSwiftUIApp.swift in Sources */,
-				76C04A722BEB7E3000FA32B4 /* RectangleView.swift in Sources */,
+				76C04A722BEB7E3000FA32B4 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
