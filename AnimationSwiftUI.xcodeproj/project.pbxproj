@@ -14,6 +14,7 @@
 		76C04A722BEB7E3000FA32B4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A712BEB7E3000FA32B4 /* CardView.swift */; };
 		76C04A762BEB8BEB00FA32B4 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A752BEB8BEB00FA32B4 /* PhoneView.swift */; };
 		76C04A7D2BEC10ED00FA32B4 /* PathAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A7C2BEC10ED00FA32B4 /* PathAnimation.swift */; };
+		76C04A7F2BECBFEE00FA32B4 /* GeometryAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04A7E2BECBFEE00FA32B4 /* GeometryAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		76C04A712BEB7E3000FA32B4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		76C04A752BEB8BEB00FA32B4 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 		76C04A7C2BEC10ED00FA32B4 /* PathAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAnimation.swift; sourceTree = "<group>"; };
+		76C04A7E2BECBFEE00FA32B4 /* GeometryAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				76C04A632BEB7BE100FA32B4 /* AnimationSwiftUIApp.swift */,
 				76C04A652BEB7BE100FA32B4 /* ContentView.swift */,
+				76C04A7E2BECBFEE00FA32B4 /* GeometryAnimation.swift */,
 				76C04A712BEB7E3000FA32B4 /* CardView.swift */,
 				76C04A752BEB8BEB00FA32B4 /* PhoneView.swift */,
 				76C04A7C2BEC10ED00FA32B4 /* PathAnimation.swift */,
@@ -148,6 +151,7 @@
 			files = (
 				76C04A662BEB7BE100FA32B4 /* ContentView.swift in Sources */,
 				76C04A762BEB8BEB00FA32B4 /* PhoneView.swift in Sources */,
+				76C04A7F2BECBFEE00FA32B4 /* GeometryAnimation.swift in Sources */,
 				76C04A642BEB7BE100FA32B4 /* AnimationSwiftUIApp.swift in Sources */,
 				76C04A7D2BEC10ED00FA32B4 /* PathAnimation.swift in Sources */,
 				76C04A722BEB7E3000FA32B4 /* CardView.swift in Sources */,
