@@ -65,7 +65,7 @@ struct PathAnimation: View {
             }
             .fill(.green)
             .shadow(radius: 10)
-            .offset(y: earAnimation ? middle * 0.3 : middle * 0.2)
+            .offset(y: earAnimation ? middle * 0.4 : middle * 0.35)
             
             // MARK: - левое ухо
             Path { path in
@@ -79,6 +79,7 @@ struct PathAnimation: View {
             .fill(.gray)
             .stroke(.gray, style: StrokeStyle())
             .shadow(radius: 5)
+            .rotationEffect(Angle.degrees(earAnimation ? -10 : 0), anchor: .center)
             
             // MARK: - левое ухо середина
             Path { path in
@@ -90,7 +91,8 @@ struct PathAnimation: View {
             }
             .fill(.myPink)
             .stroke(.myPink, style: StrokeStyle())
-            .offset(x: middle * 0.01, y: middle * 0.4)
+            .offset(x: middle * 0.04, y: middle * 0.75)
+            .rotationEffect(Angle.degrees(earAnimation ? -10 : 0), anchor: .center)
             
             // MARK: - правое ухо
             Path { path in
@@ -104,6 +106,7 @@ struct PathAnimation: View {
             .fill(.gray)
             .stroke(.gray, style: StrokeStyle())
             .shadow(radius: 5)
+            .rotationEffect(Angle.degrees(earAnimation ? -10 : 0), anchor: .center)
             
             // MARK: - правое ухо середина
             
@@ -116,7 +119,8 @@ struct PathAnimation: View {
             }
             .fill(.myPink)
             .stroke(.myPink, style: StrokeStyle())
-            .offset(x: middle * 0.6, y: middle * 0.4)
+            .offset(x: middle * 0.55, y: middle * 0.8)
+            .rotationEffect(Angle.degrees(earAnimation ? -10 : 0), anchor: .center)
         
             // MARK: - тело
             Path { path in
@@ -130,8 +134,8 @@ struct PathAnimation: View {
                 path.closeSubpath()
             }
             .fill(.gray)
-//            .stroke(.black, style: StrokeStyle())
             
+            // MARK: - линии на голове
             Path { path in
                 path.move(to: CGPoint(x: nearLine * 1.9, y: farLine * 0.79))
                 path.addLine(to: CGPoint(x: nearLine * 5.5, y: middle * 1.5))
@@ -141,9 +145,8 @@ struct PathAnimation: View {
                 path.closeSubpath()
             }
             .fill(.white)
-            .stroke(.black, style: StrokeStyle())
-            
-            
+            .stroke(.gray, style: StrokeStyle())
+            .rotationEffect(Angle.degrees(earAnimation ? -10 : 0), anchor: .center)
             
             Path { path in
                 path.move(to: CGPoint(x: nearLine * 1.9, y: farLine * 0.79))
@@ -151,12 +154,12 @@ struct PathAnimation: View {
                 path.addLine(to: CGPoint(x: nearLine * 5.5, y: middle * 1.5))
                 path.move(to: CGPoint(x: nearLine * 6, y: nearLine * 9.6))
                 path.addLine(to: CGPoint(x: nearLine * 0.9, y: middle * 1.8))
+                
             }
             .fill(.gray)
-//            .stroke(.black, style: StrokeStyle())
+            .rotationEffect(Angle.degrees(earAnimation ? -10 : 0), anchor: .center)
             
-            
-            
+            // MARK: - линии на теле
             Path { path in
                 path.move(to: CGPoint(x: nearLine * 6, y: nearLine * 9.6))
                 path.addLine(to: CGPoint(x: middle * 1.84, y: nearLine * 16.9))
@@ -164,8 +167,8 @@ struct PathAnimation: View {
                 path.addLine(to: CGPoint(x: middle * 1.8, y: nearLine * 11))
             }
             .fill(.gray)
-//            .stroke(.black, style: StrokeStyle())
             
+            // MARK: - линии на груди
             Path { path in
                 path.move(to: CGPoint(x: nearLine * 6, y: nearLine * 9.6))
                 path.addLine(to: CGPoint(x: nearLine * 2.9, y: nearLine * 16.89))
