@@ -28,7 +28,7 @@ struct GeometryAnimation: View {
                     .frame(width: 300, height: 180)
                     .animation(.linear, value: rectangleView)
                     .offset(x: rectangleView ? 0 : UIScreen.main.bounds.height, y: -120)
-                    .transition(.move(edge: .trailing))
+                    .transition(.slide)
             }
         }
         .onTapGesture {
